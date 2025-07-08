@@ -1,0 +1,149 @@
+
+@font-face {
+    font-family:"belgiant-aesthetic";
+    src: url();
+}
+body{
+    background-color:rgb(217, 213, 216);
+    overflow-x:hidden;
+}
+a {
+  color: rgb(0, 0, 0); /* Replace 'red' with your desired color (e.g., hex code like #FF0000) */
+}
+
+.top-elements{
+display: flex;
+  justify-content: space-between; /* Places items on opposite sides */
+  width: 100%; /* Ensure container takes full width */
+  padding:0px;
+  margin:0px 0px;
+  height:25px;
+  font-family: Helvetica, sans-serif
+}
+.name-header{
+    text-align:center;
+    font-size: 20ch;
+    font-family: belgiant-aesthetic, sans-serif;
+    font-weight: 750;
+    letter-spacing:0.75rem;
+
+}
+
+.intro-para{
+    width:100%;
+    font-size: 3ch;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+
+}
+/* from kiran raj r 'navigation bar --1' on codepen */
+.nav-header{
+    width: 100%;
+    height:40px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background-color:rgb(161, 161, 165);
+    color:black;
+    padding:0px 10px 0px 10px;
+    justify-content: space-around;
+    font-family: Helvetica, sans-serif;
+
+   
+}
+ @media all and (max-width: 800px){
+    .nav-header{
+        justify-content: space-around;
+        
+
+    }
+    .image-and-bio{
+        height:300px;
+    }
+ }
+
+  @media all and (max-width: 500px){
+    .nav-header{
+        flex-direction:column;
+        height:fit-content;
+        padding-top:10px;
+        padding-bottom:10px;
+
+    }
+    .image-and-bio{
+        height:200px;
+    }
+  }
+.image{
+    overflow:hidden;
+    height:100%;
+    position:relative;
+    margin: 0px auto;
+    overflow-x:hidden;
+}
+.image-and-bio{
+    border:1px solid black;
+    display:flex;
+    width:90%;
+    margin:0 auto;
+    height:500px;
+}
+.bio{ 
+    font-size:3ch;
+    width: 40%;
+    overflow-y:scroll;
+    position:relative;
+    margin-left:-06%;
+    padding:3%;
+
+
+
+}
+
+.image2 {
+    overflow: hidden;
+    width: 60%;
+    background-color: black;
+    position: relative;
+}
+
+.image2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:6 0; /* Adjust this value to crop more or less from the top */
+}
+
+.image-and-bio2{
+    border:1px solid black;
+    display:flex;
+    width:90%;
+    margin:0 auto;
+    height:500px;
+}
+.bio2{ 
+    font-size:3ch;
+    width: 40%;
+    position:relative;
+    margin-left:2%;
+    overflow-y:hidden;
+    padding:3%
+
+
+}
+
+.bio::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-2{
+    list-style: none;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    font-size: 4ch;
+    line-height: 1.9;
+    
+
+}
